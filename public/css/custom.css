@@ -37,7 +37,8 @@ ul.sidebar-menu li ul.sub li a:hover {
 }
 
 .btn-primary {
-    border-color: #fafafa!important;
+    color: #fed189!important;
+    border-color: #fed189!important;
     background-color: #fafafa!important;
 }
 
