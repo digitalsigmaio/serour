@@ -1,0 +1,54 @@
+.body {
+    background-color: #fff!important;
+}
+
+.dark-bg {
+    color: #fff;
+    background-color: #590202!important;
+}
+
+#sidebar {
+    background-color: #8C0303!important;
+}
+
+ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    background-color: #590202!important;
+}
+
+ul.sidebar-menu ul.sub li {
+    color: #8C0303!important;
+    background-color: #fff!important;
+}
+
+ul.sidebar-menu li ul.sub li a {
+     color: #8C0303!important;
+ }
+
+ul.sidebar-menu li ul.sub li a:hover {
+    color: #fff!important;
+}
+
+.profile-ava img {
+    border: 2px solid #fff!important;
+}
+
+.dropdown-menu.extended.logout > li:last-child > a, .dropdown-menu.extended.logout > li:last-child > a:hover {
+    background-color: #8C0303!important;
+}
+
+.btn-primary {
+    border-color: #8C0303!important;
+    background-color: #8C0303!important;
+}
+
+.btn-primary:hover {
+    color: #8C0303!important;
+    border-color: #8C0303!important;
+    background: transparent!important;
+}
+
+.panel.panel-primary .panel-heading, .panel.panel-primary .panel-footer {
+    color: #fff;
+    background-color: #8C0303!important;
+    border-color: #8C0303!important;
+}
