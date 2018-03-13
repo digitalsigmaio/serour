@@ -9,7 +9,7 @@ class GMS extends Model
 {
     private $allowedMimeTypes = ['image/jpeg','image/gif','image/png','image/bmp','image/svg+xml'];
 
-    const SUB_DOMAIN = '/gmsred/';
+    const SUB_DOMAIN = '/serour/';
 
     const DEFAULT_IMAGE_PATH = self::SUB_DOMAIN . 'img/default.png';
     /*

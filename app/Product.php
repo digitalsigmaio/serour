@@ -12,7 +12,7 @@ class Product extends GMS
      * @var array
      * */
     protected $attributes = [
-        'logo' => self::DEFAULT_IMAGE_PATH,
+        'image' => self::DEFAULT_IMAGE_PATH,
         'parent_company_id' => 1
     ];
 
@@ -50,5 +50,10 @@ class Product extends GMS
     public function images()
     {
         return $this->hasMany(ProductImage::class, 'product_id');
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }

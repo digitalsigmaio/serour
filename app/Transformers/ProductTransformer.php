@@ -23,6 +23,7 @@ class ProductTransformer extends TransformerAbstract
             'en_name'        => $product->en_name,
             'ar_description' => $product->ar_description,
             'en_description' => $product->en_description,
+            'category_id'    => $product->category_id,
             'logo'           => $product->logo,
 			'images'         => $product->images
         ];

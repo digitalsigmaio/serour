@@ -2,9 +2,9 @@
     <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
-            <li class="active">
+            <li class="active" style="text-align: center;">
                 <a class="" href="{{ route('home') }}">
-                    <img src="/gmsgroup/img/parentcompany/parentcompany_1.png" class="nav-logo" />
+                    <i class="icon_building" style="font-size: 50px"></i>
                 </a>
             </li>
             <li class="sub-menu">
@@ -13,7 +13,7 @@
                     <span>Notifications</span>
                 </a>
             </li>
-            <li class="sub-menu">
+           {{-- <li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="icon_flowchart_alt"></i>
                     <span>Subsidiaries</span>
@@ -33,6 +33,17 @@
                 <ul class="sub">
                     <li><a class="" href="{{ route('employees') }}">List</a></li>
                     <li><a class="" href="{{ route('newEmployee') }}">New</a></li>
+                </ul>
+            </li>--}}
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="icon_circle-empty"></i>
+                    <span>Categories</span>
+                    <span class="menu-arrow arrow_carrot-right"></span>
+                </a>
+                <ul class="sub">
+                    <li><a class="" href="{{ route('categories') }}">List</a></li>
+                    <li><a class="" href="{{ route('newCategory') }}">New</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -57,7 +68,7 @@
                     <li><a class="" href="{{ route('newService') }}">New</a></li>
                 </ul>
             </li>
-            <li class="sub-menu">
+            {{--<li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="icon_easel_alt"></i>
                     <span>Projects</span>
@@ -67,7 +78,7 @@
                     <li><a class="" href="{{ route('projects') }}">List</a></li>
                     <li><a class="" href="{{ route('newProject') }}">New</a></li>
                 </ul>
-            </li>
+            </li>--}}
             <li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="icon_group"></i>
@@ -79,7 +90,7 @@
                     <li><a class="" href="{{ route('newClient') }}">New</a></li>
                 </ul>
             </li>
-            <li class="sub-menu">
+            {{--<li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="social_rss"></i>
                     <span>News</span>
@@ -89,7 +100,7 @@
                     <li><a class="" href="{{ route('news') }}">List</a></li>
                     <li><a class="" href="{{ route('newNews') }}">New</a></li>
                 </ul>
-            </li>
+            </li>--}}
             <li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="social_share"></i>
@@ -101,7 +112,7 @@
                     <li><a class="" href="{{ route('newSocial') }}">New</a></li>
                 </ul>
             </li>
-            <li class="sub-menu">
+            {{--<li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="icon_mail_alt"></i>
                     <span>Messages</span>
@@ -110,8 +121,8 @@
                 <ul class="sub">
                     <li><a class="" href="{{ route('messages') }}">List</a></li>
                 </ul>
-            </li>
-            <li class="sub-menu">
+            </li>--}}
+            {{--<li class="sub-menu">
                 <a href="javascript:;" class="">
                     <i class="icon_images"></i>
                     <span>Gallery</span>
@@ -121,9 +132,7 @@
                     <li><a class="" href="{{ route('galleries') }}">List</a></li>
                     <li><a class="" href="{{ route('newGallery') }}">New</a></li>
                 </ul>
-            </li>
-
-
+            </li>--}}
 
             @if(\Illuminate\Support\Facades\Auth::user()->role < 3)
             <li class="sub-menu">

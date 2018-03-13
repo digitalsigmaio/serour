@@ -9,7 +9,7 @@
     <meta name="keyword" content="GMS, Company, App, Control Panel">
     <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
 
-    <title>GMS Admin Area</title>
+    <title>Serour Furniture Admin Area</title>
 
     <!-- Bootstrap CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
@@ -55,7 +55,7 @@
         </div>
 
         <!--logo start-->
-        <a href="{{ route('home') }}" class="logo">GMS GROUP <span class="lite">Admin</span></a>
+        <a href="{{ route('home') }}" class="logo">SEROUR FURNITURE <span class="lite">Admin</span></a>
         <!--logo end-->
         <div class="top-nav notification-row">
             <!-- notificatoin dropdown start-->

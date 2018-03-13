@@ -45,6 +45,16 @@ Route::group(['prefix' => 'employees'], function (){
     Route::delete('/{employee}',     'Employee\EmployeeController@destroy')->name('deleteEmployee')->middleware('auth');
 });
 
+Route::group(['prefix' => 'categories'], function () {
+    Route::get('/',                 'Category\CategoryController@index')->name('categories')->middleware('auth');
+    Route::get('/new',              'Category\CategoryController@create')->name('newCategory')->middleware('auth');
+    Route::post('/',                'Category\CategoryController@store')->name('storeCategory')->middleware('auth');
+    Route::get('/{category}/edit',   'Category\CategoryController@edit')->name('editCategory')->middleware('auth');
+    Route::put('/{category}',        'Category\CategoryController@update')->name('updateCategory')->middleware('auth');
+    Route::get('/{category}',        'Category\CategoryController@show')->name('showCategory')->middleware('auth');
+    Route::delete('/{category}',     'Category\CategoryController@destroy')->name('deleteCategory')->middleware('auth');
+});
+
 Route::group(['prefix' => 'products'], function (){
     Route::get('/',                  'Product\ProductController@index')->name('products')->middleware('auth');
     Route::get('/new',               'Product\ProductController@create')->name('newProduct')->middleware('auth');

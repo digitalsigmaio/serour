@@ -32,6 +32,11 @@ Route::group(['prefix' => 'employees'], function (){
     Route::get('/{child}', 'Employee\EmployeeController@show');
 });
 
+Route::group(['prefix' => 'categories'], function (){
+    Route::get('/', 'Category\CategoryController@index');
+    Route::get('/{category}', 'Category\CategoryController@show');
+});
+
 Route::group(['prefix' => 'products'], function (){
     Route::get('/', 'Product\ProductController@index');
     Route::get('/{product}', 'Product\ProductController@show');

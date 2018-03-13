@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Product;
 
+use App\Category;
 use App\Product;
 use App\Http\Requests\StoreProductRequest;
+use App\Transformers\CategoryTransformer;
 use App\Transformers\ProductTransformer;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -44,7 +46,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('newProduct');
+        $categories = Category::all();
+        return view('newProduct', compact('categories'));
     }
 
     /**
@@ -60,11 +63,12 @@ class ProductController extends Controller
         $product->en_name = $request->en_name;
         $product->ar_description = $request->ar_description;
         $product->en_description = $request->en_description;
+        $product->category_id = $request->category_id;
         $product->save();
         /*
          * Here stands logo upload function
          * */
-        $product->uploadLogo($request);
+        $product->uploadImage($request);
 
 
 
@@ -106,7 +110,8 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('editProduct', compact('product'));
+        $categories = Category::all();
+        return view('editProduct', compact(['product', 'categories']));
     }
 
     /**
@@ -134,11 +139,12 @@ class ProductController extends Controller
         $product->en_name = $request->en_name;
         $product->ar_description = $request->ar_description;
         $product->en_description = $request->en_description;
+        $product->category_id = $request->category_id;
         $product->save();
         /*
          * Here stands logo upload function
          * */
-        $product->uploadLogo($request);
+        $product->uploadImage($request);
 
 
 
