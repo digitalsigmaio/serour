@@ -27,11 +27,6 @@ class ProductController extends Controller
         if($request->wantsJson()){
             return  fractal()
                     ->collection($products)
-                    ->parseIncludes(['clients'])
-                    ->addMeta([
-                        'ar_tagline' => Product::AR_TAGLINE,
-                        'en_tagline' => Product::EN_TAGLINE
-                    ])
                     ->transformWith(new ProductTransformer)
                     ->toArray();
         }
@@ -75,7 +70,6 @@ class ProductController extends Controller
         if($request->wantsJson()){
             return  fractal()
                 ->item($product)
-                ->parseIncludes(['clients'])
                 ->transformWith(new ProductTransformer)
                 ->toArray();
         }
@@ -94,7 +88,6 @@ class ProductController extends Controller
         if($request->wantsJson()){
             return  fractal()
                 ->item($product)
-                ->parseIncludes(['clients'])
                 ->transformWith(new ProductTransformer)
                 ->toArray();
         }
