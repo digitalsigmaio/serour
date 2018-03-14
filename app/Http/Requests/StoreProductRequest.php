@@ -26,8 +26,6 @@ class StoreProductRequest extends FormRequest
         return [
             'ar_name' => 'required',
             'en_name' => 'required',
-            'ar_description' => 'required',
-            'en_description' => 'required'
         ];
     }
 }

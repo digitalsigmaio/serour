@@ -27,14 +27,14 @@
                         <div class="form-group">
                             <label class="control-label col-lg-2" for="ar_name">Arabic Name</label>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" name="ar_name" id="ar_name">
+                                <input type="text" class="form-control" name="ar_name" id="ar_name" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="control-label col-lg-2" for="en_name">English Name</label>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" name="en_name" id="en_name">
+                                <input type="text" class="form-control" name="en_name" id="en_name" required>
                             </div>
                         </div>
                         <!-- Content -->
@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <label for="category" class="control-label col-lg-2">Category</label>
                             <div class="col-lg-10">
-                                <select name="category_id" id="category" class="form-control">
+                                <select name="category_id" id="category" class="form-control" required>
                                     <option value="" selected disabled style="background-color: grey; color: #fff">Select category</option>
                                     @if(count($categories))
                                         @foreach($categories as $category)
