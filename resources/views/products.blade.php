@@ -24,6 +24,7 @@
                         <th>English Name</th>
                         <th>Arabic Description</th>
                         <th>English Description</th>
+                        <th>Category</th>
                         <th>Gallery</th>
                         <th>Edit</th>
                         <th>Delete</th>
@@ -38,6 +39,7 @@
                                 <td>{{ $product->en_name }}</td>
                                 <td><div dir="rtl">{{ $product->ar_description }}</div></td>
                                 <td>{{ $product->en_description }}</td>
+                                <td>{{ $product->category->en_name }}</td>
                                 <td><a href="{{ route('productImages', compact('product')) }}"><span class="btn btn-success">View</span></a></td>
                                 <td><a href="{{ route('editProduct', compact('product')) }}"><span class="btn btn-info">Edit</span></a></td>
                                 <td>
