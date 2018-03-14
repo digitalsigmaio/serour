@@ -26,7 +26,7 @@ class CategoryController extends Controller
                 ->toArray();
         }
 
-        return view('categories', compact('categories'));
+        return view('categoriesList', compact('categories'));
     }
 
     /**
