@@ -7,6 +7,7 @@
  */
 namespace App\Transformers;
 
+use App\Http\Resources\GalleryResrouce;
 use App\Product;
 use League\Fractal\TransformerAbstract;
 
@@ -24,8 +25,8 @@ class ProductTransformer extends TransformerAbstract
             'ar_description' => $product->ar_description,
             'en_description' => $product->en_description,
             'category_id'    => $product->category_id,
-            'image'           => $product->image,
-			'gallery'         => $product->images
+            'image'          => $product->image,
+			'gallery'        => GalleryResrouce::collection($product->images)
         ];
     }
 
