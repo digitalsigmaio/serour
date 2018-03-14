@@ -15,9 +15,9 @@ class GalleryResrouce extends Resource
     public function toArray($request)
     {
         return [
-            'id' => $request->id,
-            'image' => $request->image,
-            'product_id' => $request->product_id
+            'id' => $this->id,
+            'image' => $this->image,
+            'product_id' => $this->product_id
         ];
     }
 }
