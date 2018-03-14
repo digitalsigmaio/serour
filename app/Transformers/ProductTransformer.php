@@ -24,8 +24,8 @@ class ProductTransformer extends TransformerAbstract
             'ar_description' => $product->ar_description,
             'en_description' => $product->en_description,
             'category_id'    => $product->category_id,
-            'logo'           => $product->logo,
-			'images'         => $product->images
+            'image'           => $product->image,
+			'gallery'         => $product->images
         ];
     }
 
