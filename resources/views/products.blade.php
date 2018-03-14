@@ -33,7 +33,7 @@
                     @if(count($products))
                         @foreach($products as $product)
                             <tr>
-                                <td><img src="{{ $product->logo }}" style="height:40px; margin-top:-2px;"></td>
+                                <td><img src="{{ $product->image }}" style="height:40px; margin-top:-2px;"></td>
                                 <td><div dir="rtl">{{ $product->ar_name }}</div></td>
                                 <td>{{ $product->en_name }}</td>
                                 <td><div dir="rtl">{{ $product->ar_description }}</div></td>
