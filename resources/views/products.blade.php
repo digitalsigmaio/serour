@@ -16,7 +16,7 @@
                 <h2><i class="fa fa-flag-o red"></i><strong>Products list</strong></h2>
             </div>
             <div class="panel-body">
-                <table class="table table-hover bootstrap-datatable ">
+                <table class="table table-hover bootstrap-datatable">
                     <thead>
                     <tr>
                         <th></th>
