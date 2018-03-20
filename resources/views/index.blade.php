@@ -158,7 +158,7 @@
                     <tr>
                         <td><span class="fa fa-map-marker"></span></td>
                         <td>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.3324665203047!2d30.918476250741758!3d29.96031504795505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU3JzM2LjkiTiAzMMKwNTUnMTUuMiJF!5e0!3m2!1sen!2seg!4v1511875304558" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6825.816262649269!2d29.912526886522627!3d31.1955605139044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4906539116b%3A0xb6515eb3f9c6fd21!2sPanalpina+World+Transport+Egypt!5e0!3m2!1sen!2seg!4v1521539391042" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </td>
                         <td>
 
